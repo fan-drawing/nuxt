@@ -1,0 +1,29 @@
+.list-ul>li{
+    float: left;
+    width:100%;
+    padding:15px;
+    margin-bottom:30px;
+    border-bottom:1px dashed #eee;
+    counter-increment: ordered;
+    content: counters(ordered,".")" ";
+}
+.list-ul{counter-reset: ordered;}
+.one-title{
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+.item-show>div{padding-left:16px;}
+.item-show p{
+    font-size:14px;
+    line-height: 24px;
+}
+pre{
+    padding:10px 10px;
+    background:#eee;
+}
+.action{padding:10px 0px;}
+.use ul{padding-left:16px;}
+.use ul li{margin-bottom:12px;}
+.use{margin-top:20px;}
+.item-show .two-title{font-size: 24px;margin-bottom: 20px;}
