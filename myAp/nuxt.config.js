@@ -46,6 +46,7 @@ module.exports = {
   ],
   /*
   ** Nuxt.js modules
+  ** 一个小插曲在Nuxt中，~与@都指向的是根目录。
   */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage

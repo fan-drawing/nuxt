@@ -12,12 +12,15 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
+    "cookie-universal": "^2.0.16",
     "cookie-universal-nuxt": "^2.0.17",
     "cross-env": "^5.2.0",
     "element-ui": "^2.4.11",
     "express": "^4.16.4",
     "nuxt": "^2.0.0",
-    "qs": "^6.8.0"
+    "qs": "^6.8.0",
+    "vuex": "^3.1.1",
+    "vuex-persistedstate": "^2.5.4"
   },
   "devDependencies": {
     "@nuxtjs/axios": "^5.6.0",

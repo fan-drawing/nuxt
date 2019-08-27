@@ -13,6 +13,9 @@
       <li>
         <axiosUse></axiosUse>
       </li>
+      <li>
+        <config></config>
+      </li>
     </ul>
   </div>
 </template>
@@ -22,13 +25,15 @@
   import plugins from '~/components/plugins.vue'
   import middleware from '~/components/middleware.vue'
   import axiosUse from '~/components/axiosUse.vue'
+  import config from '~/components/config.vue'
 
   export default {
     components: {
       cookieUse,
       plugins,
       middleware,
-      axiosUse
+      axiosUse,
+      config
     },
     data:function(){
       return {
