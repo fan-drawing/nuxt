@@ -40,14 +40,22 @@
         info:null,
       }
     },
-    async asyncData ({app,$codeTab}) {
-      //  console.log(1);
-      //  console.log(app.codeTab)
-      // console.log(app.$axios)
-      let { data } = await app.$axios.get('https://api.myjson.com/bins/mr6ma');
-      let { data2 } = await app.$axios.get('https://api.myjson.com/bins/mr6ma');
-      return { info: data,info2:data2 }
+    // async asyncData ({app,$codeTab}) {
+    //    console.log(1);
+    //    console.log(app.codeTab)
+    //   console.log(app.$axios)
+    //   let { data } = await app.$axios.get('https://api.myjson.com/bins/mr6ma');
+    //   let { data2 } = await app.$axios.get('https://api.myjson.com/bins/mr6ma');
+    //   return { info: data,info2:data2 }
   
+    // },
+    mounted() {
+      this.$axios.get('/chengyu/query',{
+        params: {
+          key: '0a7f42ac04701489465679ca36cfe263',
+          word:'桃红柳绿',
+        }
+      })
     },
   }
 

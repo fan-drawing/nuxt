@@ -59,12 +59,22 @@ module.exports = {
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
-  proxy: [
-    ['/app', { target: 'http://xxx.com:8080' }] //代理 跨域使用
-  ],
+
   axios: {
-    
+    proxy: true,
+    prefix:"/api/",
+    credentials: true,
   },
+  proxy: {
+    '/api/': { 
+      target: 'http://v.juhe.cn', 
+      pathRewrite: {
+        '^/api/': '/',
+        changeOrigin: true
+      } 
+    }
+  },
+ 
   /*
   ** Build configuration
   */
